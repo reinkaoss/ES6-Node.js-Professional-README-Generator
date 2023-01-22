@@ -25,11 +25,11 @@ const qs =
     // message: "Please enter your email address",
     // name: "email",
     // },
-    {
-        type: "input",
-        message: "What is your Github username?",
-        name: "git",
-    },
+    // {
+    //     type: "input",
+    //     message: "What is your Github username?",
+    //     name: "git",
+    // },
     {
         // Title/Description section
         type: "input",
@@ -46,6 +46,7 @@ const qs =
     //     type: "input",
     //     message: "Please descibre how to install your project",
     //     name: "installation",
+    //     default: "N/A"
     // },
     // {
     //     type: "input",
@@ -61,13 +62,15 @@ const qs =
     },
     // {
     //     type: "input",
-    //     message: "Would you like to add contributors to your project?",
+    //     message: "Please explain how a developer can make a contribution to the project?",
     //     name: "contributors",
+    //     default: "N/A"
     // }, 
     // {
     //     type: "input",
-    //     message: "Have you done any tests you would like to display?",
+    //     message: "If you have tests in place, please explain how these can be run?",
     //     name: "test",
+    //     default: "N/A"
     // }, 
 ]
 
@@ -81,14 +84,17 @@ const generateQuestions = () => {
 inquirer
 .prompt(qs)
 .then((response) => {
-    // let badge = [response.license]
-    // if(badge == "MIT") {
-    //     badge = "[![License](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://opensource.org/licenses/MIT)" }
-    // if(badge == "Apache") {
-    //     badge = "[![License](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://opensource.org/licenses/MIT)"
-    // }
-    writeToFile("README.md", generateMarkdown(response));
-    
+    let badge = [response.license]
+    if(badge == "MIT") {
+        badge = "[![License](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://opensource.org/licenses/MIT)" }
+        if(badge == "Apache") {
+        badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
+    if(badge == "GPLv2") {
+        badge = "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+    }
+    writeToFile("README.md", `\n ${badge}` + generateMarkdown(response));
+
 });
 }
 generateQuestions();
