@@ -1,48 +1,36 @@
+# README Generator
+A command-line application that generates a professional README file for your project. The application uses the answers to a series of prompts to generate a README file in the markdown format. This README file can be easily added to your Github repository to give your project a more polished and professional appearance.
 
- [![License](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://opensource.org/licenses/MIT)
- 
-  
- # README Project 
+## Getting Started
+Clone the repository to your local machine
+Run npm install to install the required dependencies
+Run node index.js to start the application
+Answer the prompted questions about your project
+A README.md file will be generated in the root directory of your project
 
+## Features
+* The application prompts the user with a series of questions about their project, including the title, description, installation instructions, usage example, and more.
+* The application uses the user's answers to generate a professional README file in the markdown format.
+* The application also includes a section for the user to select a license for their project, and will automatically generate a badge for the selected license.
+* The application also includes a section for the user to describe how developers can make contributions to the project.
+* The application also includes a section for the user to describe how to run tests on the project.
 
-  
- ## Overview
-  This project generates a README file based on user input 
- 
-  ## Table of Contents 
- 
-- [Installation](#Installation)  
-- [Usage](#usage)
-- [License](#license)
-- [Contributors](#contributors)
-- [Tests](#tests)
-- [Questions](#questions)
+![Working Application](./assets/Kapture%202023-01-24%20at%2011.32.32.gif)
 
-## Installation
-N/A 
+## Dependencies
+This application uses the following npm packages:
 
+fs to handle file I/O operations
+inquirer to prompt the user with questions
+path to handle file paths
+* The application also utilizes a generateMarkdown module that is used to generate the markdown content for the README file.
 
-## Usage
-undefined 
+## Customization
+* The questions asked in the application can be easily customized to fit the specific needs of your project.
+* The generateMarkdown module can be modified to include any additional sections or information that you want to include in your README file.
 
+## License
+This application is licensed under the MIT License. See the LICENSE file for details.
 
-## License 
-Copyright <2023> undefined 
- 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files ('the Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## Contributors
-N/A 
-
-
-## Tests
-N/A 
-
-
-## Questions
-My name is undefined. If you have any questions about this project, please contact me via email at victor@email.com or GitHub [here](https://github.com/Reinkaoss).
-
-
+## Conclusion
+Overall, the README Generator is a useful tool that can save you time and effort when creating a professional README file for your project. It streamlines the process and ensures that all the important information is included. By providing a polished and professional README file, you can improve the overall appearance of your project and increase the likelihood of it being noticed by potential users or contributors.
