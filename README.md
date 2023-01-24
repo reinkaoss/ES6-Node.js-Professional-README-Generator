@@ -2,12 +2,12 @@
  [![License](https://img.shields.io/badge/License-MIT-lightgray.svg)](https://opensource.org/licenses/MIT)
  
   
- # Pequenox 
+ # README Project 
 
 
   
  ## Overview
-  undefined 
+  This project generates a README file based on user input 
  
   ## Table of Contents 
  
@@ -19,7 +19,7 @@
 - [Questions](#questions)
 
 ## Installation
-undefined 
+N/A 
 
 
 ## Usage
@@ -35,14 +35,14 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Contributors
-undefined 
+N/A 
 
 
 ## Tests
-undefined 
+N/A 
 
 
 ## Questions
-My name is undefined. If you have any questions about this project, please contact me via email at undefined or GitHub [here](https://github.com/undefined).
+My name is undefined. If you have any questions about this project, please contact me via email at victor@email.com or GitHub [here](https://github.com/Reinkaoss).
 
 
